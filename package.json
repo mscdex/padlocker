@@ -1,0 +1,33 @@
+{
+  "name": "padlocker",
+  "version": "0.0.0",
+  "author": "Brian White <mscdex@mscdex.net>",
+  "description": "Simple OS-wide generic locking for node.js on Linux using abstract sockets",
+  "main": "./index.js",
+  "engines": {
+    "node": ">=21.0.0"
+  },
+  "devDependencies": {
+    "@mscdex/eslint-config": "^1.1.0",
+    "eslint": "^7.32.0"
+  },
+  "scripts": {
+    "test": "node test/test.js",
+    "lint": "eslint --cache --report-unused-disable-directives --ext=.js .eslintrc.js test",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "keywords": [
+    "locking",
+    "linux"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/mscdex/padlocker/raw/master/LICENSE"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/mscdex/padlocker.git"
+  }
+}
