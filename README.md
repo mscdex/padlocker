@@ -1,7 +1,20 @@
 # Description
 
 Simple OS-wide generic locking for node.js on Linux using abstract sockets.
-The use of abstract sockets allows for automatic unlocking when the process exits.
+
+Advantages of abstract sockets:  
+  ✅ Automatic unlocking when the process exits  
+  ✅ Can use descriptive names up to 107 bytes long  
+
+Disadvantages of abstract sockets:  
+  ❌ Linux only  
+  ❌ Scoped to entire OS, so namespacing is important  
+
+Abstract sockets when used in this way are most comparable to TCP sockets in that
+they both allow one to automatically unlock on process exit without any further
+cleanup of any resources. While TCP sockets are cross-platform, you are more
+restricted since you must choose a 16-bit number (the port number) which not only
+is less descriptive/flexible but also has a smaller set of values to choose from.
 
 # Requirements
 
