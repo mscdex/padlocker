@@ -1,6 +1,6 @@
 {
   "name": "padlocker",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Brian White <mscdex@mscdex.net>",
   "description": "Simple OS-wide generic locking for node.js on Linux using abstract sockets",
   "main": "./index.js",
